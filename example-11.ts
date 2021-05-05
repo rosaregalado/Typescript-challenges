@@ -1,4 +1,4 @@
-import Person, { Course, Student } from './example-9.js'
+import Person, { Course, Student } from './example-10.js'
 
 
 // Amy, Bob, and Cat could be Person or Student
