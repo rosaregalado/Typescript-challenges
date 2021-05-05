@@ -31,6 +31,8 @@ class Student {
 
 }
 
+
+
 export default Person
 export {
 	Course, 
