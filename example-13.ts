@@ -1,35 +1,39 @@
 
+// Functions have types add the types for the 
+// functions returned below: 
 
-// These functions take a funtion as an argument. 
-// Set the type these parameters
+// This function returns a function that returns a number
 
-// In all of the functions below type the callback
-
-// This function takes a callback that receives a string. 
-
-function callYouLater(callback, time) {
-	setTimeout(() => {
-		callback('What it be like?')
-	}, time)
+function count() {
+	let n = 0
+	return () => {
+		return n += 1
+	}
 }
 
+// This function takes an array and returns an item from
+// the array
 
-// The callback parameter in this function returns an object
-// with two properties! 
-
-function callMeMaybe(callback, probability) {
-	setTimeout(() => {
-		if (Math.random() * 100 < probability) {
-			callback({ success: true, probability })
-		}
-		return callback({ success: false, probability })
-	}, 1000)
+function next(arr) {
+	let i = -1
+	return () => {
+		i += 1
+		i = i === arr.length ? 0 : i
+		return arr[i]
+	}
 }
 
-// 
+// This function returns a function that generates a 
+// die roll. 
 
+function dice(sides) {
+	return (n) => {
+		return Math.floor(Math.random() * sides) * n
+	}
+}
 
 export {
-	callYouLater,
-	callMeMaybe
+	count,
+	next,
+	dice
 }

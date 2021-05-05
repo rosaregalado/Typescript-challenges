@@ -1,31 +1,43 @@
-import Person, { Course, Student } from './example-9.js'
 
+class Person {
+	name: string
+	age: number
 
-// Amy, Bob, and Cat could be Person or Student
-// We need to add them all to an array of people. 
-// People can be Students or Students. 
+	constructor(name, age) {
+		this.name = name 
+		this.age = age
+	}
 
-// Write an interface with name and age
-
-interface Human {
-	
+	describe(): string {
+		return `${this.name} is ${this.age}`
+	}
 }
 
-const amy: Human = new Student('Amy', 21)
-const bob: Human = new Person('Bob', 32)
-const cat: Human = new Student('Cat', 43)
+const joe = new Person('Joe', 33)
 
-// Use the interface to put Persons and Students
-// in an array of Humans. 
+// Define a Course. A Course a title: string and a units: number
 
-const allPeople: Human[] = [
-	amy, 
-	bob,
-	cat
-]
+class Course {
+
+}
+
+// Define a Student class. Student extends Person. A Student 
+// has an array of Courses and a cohort which is: junior or senior
+
+// Add enroll method that takes a Course as parameter and adds 
+// this to the course array
+
+class Student {
+
+}
 
 
 
+export default Person
 export {
-	allPeople
+	Course, 
+	Student
 }
+
+
+

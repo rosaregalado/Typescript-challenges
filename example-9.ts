@@ -1,43 +1,20 @@
 
-class Person {
-	name: string
-	age: number
 
-	constructor(name, age) {
-		this.name = name 
-		this.age = age
-	}
+// Define an enum for monster type
 
-	describe(): string {
-		return `${this.name} is ${this.age}`
-	}
-}
-
-const joe = new Person('Joe', 33)
-
-// Define a Course. A Course a title: string and a units: number
-
-class Course {
+enum MonsterType {
 
 }
 
-// Define a Student class. Student extends Person. A Student 
-// has an array of Courses and a cohort which is: junior or senior
-
-// Add enroll method that takes a Course as parameter and adds 
-// this to the course array
-
-class Student {
-
+function rampage(name, type, power, city) {
+	let action
+	switch(type) {
+		case : 
+			action = ''
+	} 
+	let result = `${name} ${action} over ${city} causing`
+	
 }
 
-
-
-export default Person
-export {
-	Course, 
-	Student
-}
-
-
-
+console.log(rampage('Gojira', 'lizard', 90, 'tokyo'))
+console.log(rampage('Mothra', 'flying', 40, ''))
