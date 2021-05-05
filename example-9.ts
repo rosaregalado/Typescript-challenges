@@ -19,7 +19,7 @@ function rampage(name, type, power, city) {
 			action = ''
 	} 
 	let result = `${name} ${action} over ${city} causing`
-	
+	return result
 }
 
 // Use the enum here when calling the rampage function
