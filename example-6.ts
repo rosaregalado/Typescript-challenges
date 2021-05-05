@@ -19,3 +19,7 @@ console.log(displayNutrition(snack3))
 
 // Compile the code and check what type script says: 
 // tsc example-6.ts
+
+export {
+  displayNutrition
+}

@@ -16,3 +16,8 @@ const ace: Card = {
 
 // Compile the code and check what type script says: 
 // tsc example-7.ts
+
+export {
+	Suit,
+	Card
+}
