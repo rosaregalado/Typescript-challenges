@@ -1,39 +1,36 @@
 
-// Functions have types add the types for the 
-// functions returned below: 
+// You are making a mapping application. 
 
-// This function returns a function that returns a number
+// Write an enum that defines the directions: 
+// North, South, East, West
 
-function count() {
-	let n = 0
-	return () => {
-		return n += 1
+enum Direction {
+	
+}
+
+// Should having a heading property type Direction
+
+class MapPosition {
+
+	constructor() {
+		
+	}
+
+	// takes a new Direction as an argument
+	move(newDirection: Direction) {
+		
+	}
+
+	// Should return a string and print:
+	// "you are heading <direction>"
+	describe(): string {
+		return ''
 	}
 }
 
-// This function takes an array and returns an item from
-// the array
+console.log(new MapPosition().describe())
+// Might output:
+// "You are heading north"
 
-function next(arr) {
-	let i = -1
-	return () => {
-		i += 1
-		i = i === arr.length ? 0 : i
-		return arr[i]
-	}
-}
 
-// This function returns a function that generates a 
-// die roll. 
-
-function dice(sides) {
-	return (n) => {
-		return Math.floor(Math.random() * sides) * n
-	}
-}
-
-export {
-	count,
-	next,
-	dice
-}
+export default MapPosition

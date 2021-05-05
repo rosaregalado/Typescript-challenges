@@ -1,36 +1,31 @@
+import Person, { Course, Student } from './example-9.js'
 
-// You are making a mapping application. 
 
-// Write an enum that defines the directions: 
-// North, South, East, West
+// Amy, Bob, and Cat could be Person or Student
+// We need to add them all to an array of people. 
+// People can be Students or Students. 
 
-enum Direction {
+// Write an interface with name and age
+
+interface Human {
 	
 }
 
-// Should having a heading property type Direction
+const amy: Human = new Student('Amy', 21)
+const bob: Human = new Person('Bob', 32)
+const cat: Human = new Student('Cat', 43)
 
-class MapPosition {
+// Use the interface to put Persons and Students
+// in an array of Humans. 
 
-	constructor() {
-		
-	}
+const allPeople: Human[] = [
+	amy, 
+	bob,
+	cat
+]
 
-	// takes a new Direction as an argument
-	move(newDirection: Direction) {
-		
-	}
 
-	// Should return a string and print:
-	// "you are heading <direction>"
-	describe(): string {
-		return ''
-	}
+
+export {
+	allPeople
 }
-
-console.log(new MapPosition().describe())
-// Might output:
-// "You are heading north"
-
-
-export default MapPosition
