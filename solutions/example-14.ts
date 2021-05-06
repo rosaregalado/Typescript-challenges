@@ -17,7 +17,12 @@ function callYouLater(callback: (message: string) => void, time: number) {
 // The callback parameter in this function returns an object
 // with two properties! 
 
-function callMeMaybe(callback: ({ success: boolean, probability: number }) => void, probability) {
+type CallMeResults = {
+	success: boolean, 
+	probability: number
+}
+
+function callMeMaybe(callback: (results: CallMeResults) => void, probability) {
 	setTimeout(() => {
 		if (Math.random() * 100 < probability) {
 			callback({ success: true, probability })
@@ -27,7 +32,6 @@ function callMeMaybe(callback: ({ success: boolean, probability: number }) => vo
 }
 
 // 
-
 
 export {
 	callYouLater,
