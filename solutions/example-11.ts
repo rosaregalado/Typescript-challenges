@@ -25,8 +25,6 @@ const allPeople: Human[] = [
 	cat
 ]
 
-
-
 export {
 	allPeople
 }
