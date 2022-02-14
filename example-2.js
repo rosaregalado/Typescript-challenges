@@ -1,5 +1,5 @@
 // Take a look at the code here. Notice the VSCode will 
-// provide errors
+// NOT provide errors
 function getPriceWithTax(amount, rate) {
     var price = amount.toFixed(2);
     var tax = price * rate;

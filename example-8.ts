@@ -12,7 +12,6 @@ console.log(makeKaiju('Gojira', 'lizard', 90))
 console.log(makeKaiju('Mothra', 'flying', 45))
 console.log(makeKaiju('Kong', 'ape', 88))
 
-
 export {
 	makeKaiju
 }
