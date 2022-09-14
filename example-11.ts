@@ -3,7 +3,10 @@ import Person, { Course, Student } from './example-10.js'
 
 // Amy, Bob, and Cat could be Person or Student
 // We need to add them all to an array of people. 
-// People can be Students or Students. 
+// People can be either Person or Student. 
+
+// An interface describes features of a type. All 
+// tyoes that have those features fit the interface.
 
 // Write an interface with name and age
 
