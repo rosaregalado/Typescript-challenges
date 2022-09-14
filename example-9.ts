@@ -4,6 +4,10 @@
 // for the type of monster. Better to use an enum
 // since monsters are only: lizard, flying, or ape
 
+// Bonus points: import the monter type and monster 
+// class defintions from the previous example and 
+// use them here! 
+
 // Define an enum for monster type
 
 enum MonsterType {
