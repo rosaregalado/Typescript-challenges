@@ -8,11 +8,12 @@ import Person, { Course, Student } from './example-10.js'
 // An interface describes features of a type. All 
 // tyoes that have those features fit the interface.
 
+// https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html#interfaces
+
 // Write an interface with name and age
 
 interface Human {
-	name: string
-	age: number
+
 }
 
 const amy: Human = new Student('Amy', 21)
