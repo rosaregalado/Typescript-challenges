@@ -1,6 +1,10 @@
 
-// Functions have types add the types for the 
-// functions returned below: 
+// Functions can be decribed as a type.
+// This happens when you need to pass a callback 
+// or have a function that returns another function. 
+// Read about function type expressions:
+
+// https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions
 
 // This function returns a function that returns a number
 
