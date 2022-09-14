@@ -5,6 +5,8 @@
 // or 
 // const nums: Array<number>
 
+// https://www.typescriptlang.org/docs/handbook/basic-types.html#array
+
 // The first should be type number
 // The second should type string
 // Add the types for the function and other variables
