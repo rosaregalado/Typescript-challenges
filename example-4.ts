@@ -1,5 +1,10 @@
 
 // Set the types here. There are two arrays below
+// Type an array like this: 
+// const nums: number[] = []
+// or 
+// const nums: Array<number>
+
 // The first should be type number
 // The second should type string
 // Add the types for the function and other variables
