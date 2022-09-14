@@ -20,8 +20,8 @@ const amy: Human = new Student('Amy', 21)
 const bob: Human = new Person('Bob', 32)
 const cat: Human = new Student('Cat', 43)
 
-// Use the interface to put Persons and Students
-// in an array of Humans. 
+// Use the interface to make an array that 
+// holds both types: Person and Student 
 
 const allPeople: Human[] = [
 	amy, 
