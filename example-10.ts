@@ -1,3 +1,9 @@
+// Here I have defined a class with type script. 
+// Take a look at how the properties are typed. 
+
+// https://www.typescriptlang.org/docs/handbook/2/classes.html#handbook-content
+
+// Complete the Course class below. 
 
 class Person {
 	name: string
