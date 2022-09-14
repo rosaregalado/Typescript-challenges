@@ -4,6 +4,11 @@
 // Define a tuple type for each. 
 // Add the types for the variables and function
 
+// Define the type for a tuple like this: 
+// const things: [string, number]
+
+// https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types
+
 const snack1 = ['Cookies', 142]
 const snack2 = ['Avocado', 234]
 const snack3 = ['Banana', 105]
