@@ -1,4 +1,6 @@
 // This function returns a function that returns a string
+// Add the types: 
+
 function sayHello(): () => string {
     return () => 'Hello!'
 }
