@@ -1,18 +1,21 @@
 
-// This needs some types! 
-// Add the types and compile it!
+// We need a Kaiju class
+// All Kaiju have name, power and type. 
+// Type can be: lizard, flying, or ape
 
-function makeKaiju(name: string, type: string, power: number): string {
-	let description = `${name} is a `
-	description += power > 50 ? `powerful ${type} monster` : `${type} monster `
-	return description
+enum KaijuType { 
+	flying,
+	lizard,
+	ape
 }
 
-console.log(makeKaiju('Gojira', 'lizard', 90))
-console.log(makeKaiju('Mothra', 'flying', 45))
-console.log(makeKaiju('Kong', 'ape', 88))
-
+class Kaiju {
+	name: string
+	type: KaijuType
+	power: number
+}
 
 export {
-	makeKaiju
+	Kaiju,
+	KaijuType
 }
