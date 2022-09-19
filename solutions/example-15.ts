@@ -10,10 +10,6 @@ console.log( hello() ) // Hello!
 console.log( hello() ) // Hello!
 console.log( hello() ) // Hello!
 
-
-
-
-
 function mathematizer(n: number): (x: number) => number {
     let sum = n
     return (x) => x * n
