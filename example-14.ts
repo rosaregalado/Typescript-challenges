@@ -1,7 +1,5 @@
-
-
-// These functions take a funtion as an argument. 
-// Set the type these parameters
+// These functions take a function as an argument. 
+// Set the type for the parameters
 
 // In all of the functions below type the callback
 
@@ -14,8 +12,6 @@ function callYouLater(callback, time) {
 }
 
 
-// The callback parameter in this function returns an object
-// with two properties! 
 
 function callMeMaybe(callback, probability) {
 	setTimeout(() => {
