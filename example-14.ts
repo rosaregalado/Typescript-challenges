@@ -7,7 +7,7 @@
 
 function callYouLater(callback, time) {
 	setTimeout(() => {
-		callback('What it be like?')
+	  callback('What it be like?')
 	}, time)
 }
 
@@ -16,9 +16,9 @@ function callYouLater(callback, time) {
 function callMeMaybe(callback, probability) {
 	setTimeout(() => {
 		if (Math.random() * 100 < probability) {
-			callback({ success: true, probability })
+		  return callback({ success: true, probability })
 		}
-		return callback({ success: false, probability })
+		callback({ success: false, probability })
 	}, 1000)
 }
 
@@ -26,6 +26,6 @@ function callMeMaybe(callback, probability) {
 
 
 export {
-	callYouLater,
-	callMeMaybe
+  callYouLater,
+  callMeMaybe
 }
