@@ -7,6 +7,7 @@ function next(arr) {
   return arr.pop()
 }
 
+// Test next()
 const arr1 = [1,2,3,4,5]
 const arr2 = ['a', 'b', 'c']
 console.log(next(arr1))
@@ -23,6 +24,7 @@ function fill(value, count) {
 // Note! error TS2550: i got this error every time I compiled this 
 // but it seemed to work anyway? 
 
+// Test fill()
 console.log(fill('a', 3))
 console.log(fill(9, 4))
 console.log(fill({}, 11))
@@ -36,6 +38,7 @@ function shuffle(arr) {
   return arrCopy
 }
 
+// Test shuffle()
 const arr3 = ['a','b','c','d']
 console.log(shuffle(arr3))
 
@@ -52,8 +55,17 @@ function iterate(arr) {
   }
 }
 
+// Test iterate()
 const nextFruit = iterate(['🍓', '🍎', '🍐', '🍊'])
+const nextNumber = iterate(shuffle([1,2,3,4,5]))
+
 console.log(nextFruit())
 console.log(nextFruit())
 console.log(nextFruit())
 console.log(nextFruit())
+
+console.log(nextNumber())
+console.log(nextNumber())
+console.log(nextNumber())
+console.log(nextNumber())
+console.log(nextNumber())
