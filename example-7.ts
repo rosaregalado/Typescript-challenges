@@ -8,13 +8,17 @@
 // https://www.typescriptlang.org/docs/handbook/enums.html#handbook-content
 
 enum Suit {
-
+	hearts,
+	clubs,
+	diamonds,
+	spades
 }
 
 type Card = { suit: Suit, value: number }
 
 const ace: Card = {
-
+	suit: Suit.spades,
+	value: 1
 }
 
 // Compile the code and check what type script says: 

@@ -5,11 +5,15 @@
 // Kaiju class that initializes it's properties!
 
 enum KaijuType { 
-	
+	lizard,
+	flying,
+	ape
 }
 
 class Kaiju {
-	
+	name: string
+	power: number
+	type: KaijuType
 }
 
 export {
