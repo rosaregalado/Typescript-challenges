@@ -14,9 +14,9 @@ exports.callYouLater = callYouLater;
 function callMeMaybe(callback, probability) {
     setTimeout(function () {
         if (Math.random() * 100 < probability) {
-            return callback({ success: true, probability: probability });
+            callback({ success: true, probability: probability });
         }
-        callback({ success: false, probability: probability });
+        return callback({ success: false, probability: probability });
     }, 1000);
 }
 exports.callMeMaybe = callMeMaybe;

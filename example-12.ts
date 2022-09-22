@@ -38,6 +38,7 @@ const location = new MapPosition()
 console.log(location.describe())
 // Might output:
 // "You are heading north"
+location.move(Direction.West)
 
 
 

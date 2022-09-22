@@ -17,7 +17,7 @@ type CallResults = {
 }
 
 
-function callMeMaybe(callback: (results: CallResults) => void, probability) {
+function callMeMaybe(callback: (results: CallResults) => void, probability: number) {
 	setTimeout(() => {
 		if (Math.random() * 100 < probability) {
 			callback({ success: true, probability })

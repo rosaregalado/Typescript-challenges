@@ -8,6 +8,9 @@ exports.__esModule = true;
 exports.KaijuType = exports.Kaiju = void 0;
 var KaijuType;
 (function (KaijuType) {
+    KaijuType[KaijuType["lizard"] = 0] = "lizard";
+    KaijuType[KaijuType["flying"] = 1] = "flying";
+    KaijuType[KaijuType["ape"] = 2] = "ape";
 })(KaijuType || (KaijuType = {}));
 exports.KaijuType = KaijuType;
 var Kaiju = /** @class */ (function () {
